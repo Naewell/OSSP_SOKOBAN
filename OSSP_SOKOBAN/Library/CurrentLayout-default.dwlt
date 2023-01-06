@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 72
+  controlID: 128
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 39
+  controlID: 103
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 96
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -467,22 +467,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/AurynSky/WinterArena/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/AurynSky/WinterArena/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\OSSP_SOKOBAN\OSSP_SOKOBAN\OSSP_SOKOBAN
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4e3d0000
-    m_LastClickedID: 15694
-    m_ExpandedIDs: 000000004e3d000000ca9a3b
+    m_SelectedIDs: e63d0000
+    m_LastClickedID: 15846
+    m_ExpandedIDs: 000000004e3d0000e23d0000e83d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -537,7 +537,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000b4710000c471000060180100be0b000066470000be8500007c460000d8690000de690000ea690000f6690000226a0000e8810000f2810000e0810000ae540000a2690000e8680000b868000054690000ae690000e4810000966800009c690000486900007e3402006099000036d80000caf7000090f70000d2f700000ee000005add0400a05d2a00a25d2a00084805004c940500463405009a320500f2320500e8320500ee320500283305003e32050088330500a6320500383405005e3805005c38050060380500ac330500a63305007c330500be3d0500b83d0500f6330500b63205009832050024330500b63305003e330500524b0500a44c0500a64c0500e8d404001c6305005c33050076320500fc320500943305008470050080700500a8700500a03205008e86050092860500a83305008232050012db04000cdb040060bb2300467b0d009ad80500dcd7050082560100106e01004e6e0100466e010004870100788e01002c8f0100f08e0100f0950100543c1500060b1500687f15005a360c0084671900906719008a6719009467190054681900606819005a681900806919008c691900302107003e210700422107002e21070032210700402107003cb5010002b50100dcb40100aeb4010028b50100e0830100247d010004b40100bee74500e2274f00a6fd4800366758008ebb6400dee56a0000fb6d002210710044257400663a7700884f7a00ba7980000273010082b801007ab8010060b8010056b80100c89200000a5900002258000024580000b6b00000bab00000f4580000125900002095000032b2010072b201005cb2010004b2010068b2010074b20100f2b10100e8b10100ecb101006ab2010012b20100fcb1010044b201000207040006070400fe0604002e0704002c07040076b20100527e07004cb2010022b2010010b2010014b2010058b2010036b2010038b2010040b2010046b2010004070400f806040038ae01005ab20100eeb10100e4b10100f6060400f4060400fa0604000807040000070400fab1010052b2010060b20100e6b1010026b2010028b201001cb201000c070400caeb1100fc060400c6eb11002cb20100f8b1010030b2010050b201004ab201000eb201005eb201000ab201002ab2010016b2010002b201002eb2010000b40100aab30100a8b30100feb30100b86513000eb40100c065130092661300c4b30100c8b30100fa7b20006c900e00bc2f0500be30050000000000bc300500c0300500d00a2900fe2f0500de5500000230050006300500f2f0350014690500
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -562,7 +562,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 220}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
@@ -691,9 +691,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -21.55702, y: 7.635338, z: -5.2993197}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -21.55702, y: 7.635338, z: -5.2993197}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
+      m_Size: {x: 5, y: 5}
     zGrid:
       m_Fade:
         m_Target: 0
@@ -740,13 +740,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.32095715, y: 0.6367457, z: -0.33053434, w: -0.6182962}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.32188398, y: 0.63624865, z: -0.33148882, w: -0.6178135}
   m_Size:
-    m_Target: 10
+    m_Target: 57.864704
     speed: 2
-    m_Value: 10
+    m_Value: 57.864704
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -801,23 +801,23 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 72fbffff
+      m_ExpandedIDs: cef7ffff72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Main Camera
+        m_OriginalName: Main Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 15638
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 11}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
