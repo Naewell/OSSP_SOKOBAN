@@ -36,9 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
      <Compile Include="Assets\AurynSky\WinterArena\Scripts\Rotator.cs" />
+     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
      <None Include="Assets\AurynSky\WinterArena\READ ME.txt" />
+     <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Core\Shaders\Simple.shader" />
+     <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Generator\Shaders\Rendering Clouds.shader" />
+     <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Core\Shaders\Standard.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -641,6 +644,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Boxophobic.PolyverseSkies.Editor.csproj">
+      <Project>{ee07311d-6453-c5ac-0ee0-c06834737e34}</Project>
+      <Name>Boxophobic.PolyverseSkies.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.PolyverseSkies.Scripts.csproj">
+      <Project>{85bf0919-08f5-58a7-5e33-d54d7562d53b}</Project>
+      <Name>Boxophobic.PolyverseSkies.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.PolyverseSkies.Runtime.csproj">
+      <Project>{73da59d2-f1a9-bd8a-8ae3-667c203ff83b}</Project>
+      <Name>Boxophobic.PolyverseSkies.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{99b4f955-4920-fb9d-b3c4-24ad0a7d3a9b}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{9b7e33fd-c4fe-27a5-8209-9eedbff73f43}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
