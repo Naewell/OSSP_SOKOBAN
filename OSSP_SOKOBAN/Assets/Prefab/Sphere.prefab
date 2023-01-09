@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6228218265817408605}
   - component: {fileID: 6228218265817408594}
   - component: {fileID: 6228218265817408595}
+  - component: {fileID: 4104352853989416500}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,5 +111,27 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &4104352853989416500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6228218265817408592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dea087e2c48e1c44a8af6668ac6498e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objW: {fileID: 0}
+  objA: {fileID: 0}
+  objS: {fileID: 0}
+  objD: {fileID: 0}
+  cangoW: 0
+  cangoA: 0
+  cangoS: 0
+  cangoD: 0
+  isSameNum: 0
+  _have: 0
