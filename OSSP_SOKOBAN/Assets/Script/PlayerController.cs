@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     
-    private GameObject[] hamburger = new GameObject[4];
     string objName;
 
     private Vector3 velo = Vector3.zero;
@@ -25,8 +24,7 @@ public class PlayerController : MonoBehaviour
 
     void start()
     {
-        //안됨... 수정해야함
-        hamburger = Resources.LoadAll<GameObject>("Hamburger/");
+
     }
 
 
@@ -44,7 +42,7 @@ public class PlayerController : MonoBehaviour
                 GameObject.Find("player").GetComponent<DetectObject>().objW is null) 
                 {
                     isMoving = true;
-                    targetPosition = transform.position + Vector3.up * 10;
+                    targetPosition = transform.position + Vector3.forward * 5;
                 }
                 
                 //플레이어 이동 가능, 플레이어 앞에 무언가 있음
@@ -61,8 +59,8 @@ public class PlayerController : MonoBehaviour
                         firstObj.GetComponent<SnowDetect>().objW is null)
                     {
                         isMoving = true;
-                        targetPosition = transform.position + Vector3.forward * 10;
-                        objTargetPosition = firstObj.transform.position + Vector3.forward * 10;
+                        targetPosition = transform.position + Vector3.forward * 5;
+                        objTargetPosition = firstObj.transform.position + Vector3.forward * 5;
                     }
                 }
             }
@@ -74,7 +72,7 @@ public class PlayerController : MonoBehaviour
                 if(GameObject.Find("player").GetComponent<DetectObject>().cangoA &&
                 GameObject.Find("player").GetComponent<DetectObject>().objA is null) {
                     isMoving = true;
-                    targetPosition = transform.position + Vector3.left * 10;
+                    targetPosition = transform.position + Vector3.left * 5;
                 }
                 
                 else if (GameObject.Find("player").GetComponent<DetectObject>().cangoA && 
@@ -86,8 +84,8 @@ public class PlayerController : MonoBehaviour
                         firstObj.GetComponent<SnowDetect>().objA is null)
                     {
                         isMoving = true;
-                        targetPosition = transform.position + Vector3.left * 10;
-                        objTargetPosition = firstObj.transform.position + Vector3.left * 10;
+                        targetPosition = transform.position + Vector3.left * 5;
+                        objTargetPosition = firstObj.transform.position + Vector3.left * 5;
                     }
 
                  }
@@ -102,7 +100,7 @@ public class PlayerController : MonoBehaviour
                 if(GameObject.Find("player").GetComponent<DetectObject>().cangoS &&
                    GameObject.Find("player").GetComponent<DetectObject>().objS is null) {
                     isMoving = true;
-                    targetPosition = transform.position + Vector3.back * 10;
+                    targetPosition = transform.position + Vector3.back * 5;
                 }
                 
                 else if (GameObject.Find("player").GetComponent<DetectObject>().cangoS &&
@@ -114,8 +112,8 @@ public class PlayerController : MonoBehaviour
                         firstObj.GetComponent<SnowDetect>().objS is null)
                     {
                         isMoving = true;
-                        targetPosition = transform.position + Vector3.down * 10;
-                        objTargetPosition = firstObj.transform.position + Vector3.down * 10;
+                        targetPosition = transform.position + Vector3.back * 5;
+                        objTargetPosition = firstObj.transform.position + Vector3.back * 5;
                     }
                  }
              }
@@ -129,7 +127,7 @@ public class PlayerController : MonoBehaviour
                 if(GameObject.Find("player").GetComponent<DetectObject>().cangoD &&
                    GameObject.Find("player").GetComponent<DetectObject>().objD is null) {
                     isMoving = true;
-                    targetPosition = transform.position + Vector3.right * 10;
+                    targetPosition = transform.position + Vector3.right * 5;
                 }
                 
                 else if (GameObject.Find("player").GetComponent<DetectObject>().cangoD &&
@@ -141,8 +139,8 @@ public class PlayerController : MonoBehaviour
                         firstObj.GetComponent<SnowDetect>().objD is null)
                     {
                         isMoving = true;
-                        targetPosition = transform.position + Vector3.right * 10;
-                        objTargetPosition = firstObj.transform.position + Vector3.right * 10;
+                        targetPosition = transform.position + Vector3.right * 5;
+                        objTargetPosition = firstObj.transform.position + Vector3.right * 5;
                     }
 
                  }

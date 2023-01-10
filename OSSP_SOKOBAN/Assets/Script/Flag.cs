@@ -8,9 +8,6 @@ public class Flag : MonoBehaviour
     public GameObject flag;
     ParticleSystem ps;
 
-    public Mesh suitcase_open;
-    public Mesh suitcase_close;
-
 
     // Start is called before the first frame update
     void Start()
