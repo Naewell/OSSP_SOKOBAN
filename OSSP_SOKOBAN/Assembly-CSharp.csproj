@@ -37,15 +37,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\ButtonController.cs" />
      <Compile Include="Assets\Script\DetectObject.cs" />
      <Compile Include="Assets\AurynSky\WinterArena\Scripts\Rotator.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\Flags.cs" />
      <Compile Include="Assets\Script\Flag.cs" />
      <Compile Include="Assets\Script\SnowDetect.cs" />
-     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
      <Compile Include="Assets\Script\SceneChange.cs" />
-     <Compile Include="Assets\Script\ButtonController.cs" />
+     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
+     <Compile Include="Assets\Script\DataManager.cs" />
+     <None Include="Assets\JsonDotNet\link.xml" />
      <None Include="Assets\AurynSky\WinterArena\READ ME.txt" />
      <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Core\Shaders\Simple.shader" />
      <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Generator\Shaders\Rendering Clouds.shader" />
