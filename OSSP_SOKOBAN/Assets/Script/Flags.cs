@@ -28,6 +28,7 @@ public class Flags : MonoBehaviour
         if(other.transform.gameObject.CompareTag("Snow"))
         {
             gameObject.GetComponent<SkinnedMeshRenderer>().material = mat[1];
+            GameManager.GetInstance().AddCnt(1);
         }
         
     }
@@ -42,6 +43,7 @@ public class Flags : MonoBehaviour
         if(other.transform.gameObject.CompareTag("Snow"))
         {
             gameObject.GetComponent<SkinnedMeshRenderer>().material = mat[0];
+            GameManager.GetInstance().SubCnt(1);
         }
     }
 }

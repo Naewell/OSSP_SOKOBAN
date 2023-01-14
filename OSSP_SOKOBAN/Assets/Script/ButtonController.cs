@@ -9,7 +9,8 @@ public class ButtonController : MonoBehaviour
 {
     public SceneChange sc;
     private string[] numStr;
-    // Start is called before the first frame update
+    private int n;
+    private GameObject[] Stages;
     void Start()
     {
         numStr = new string[16];
@@ -40,5 +41,28 @@ public class ButtonController : MonoBehaviour
             sc.call();
         }
         GameManager.GetInstance().setCnt(0);
+    }
+
+    public void OnClickExitBtn()
+    {
+        GameManager.GetInstance().setCnt(0);
+        GameManager.GetInstance().setCntFlag(0);
+        SceneManager.LoadScene("StageSelect");
+    }
+    public void OnClickNextBtn()
+    {
+        GameManager.GetInstance().setCnt(0);
+        GameManager.GetInstance().setCntFlag(0);
+        Stages = GameManager.GetInstance().getStage();
+        GameManager.GetInstance().setStageNum(GameManager.GetInstance().getStageNum()+1);
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().setStepCount(0);
+        GameObject.Find("Canvas").transform.Find("Clear Window").gameObject.SetActive(false);
+
+        n = GameManager.GetInstance().getStageNum()-1;
+        for (int i = 0; i < Stages.Length; i++) { Stages[i].SetActive(false); }
+        Stages[n].SetActive(true);
+        GameObject.Find("Main Camera").transform.position = GameObject.Find("CamPos").transform.position;
+        
+
     }
 }

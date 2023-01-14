@@ -45,8 +45,10 @@
      <Compile Include="Assets\Script\Flag.cs" />
      <Compile Include="Assets\Script\SnowDetect.cs" />
      <Compile Include="Assets\Script\SceneChange.cs" />
-     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
      <Compile Include="Assets\Script\DataManager.cs" />
+     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
+     <Compile Include="Assets\Script\FindFlag.cs" />
+     <Compile Include="Assets\Script\FindStage.cs" />
      <None Include="Assets\JsonDotNet\link.xml" />
      <None Include="Assets\AurynSky\WinterArena\READ ME.txt" />
      <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Core\Shaders\Simple.shader" />
