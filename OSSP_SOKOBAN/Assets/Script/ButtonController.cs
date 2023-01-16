@@ -65,4 +65,19 @@ public class ButtonController : MonoBehaviour
         
 
     }
+    
+    public void OnClickOptionBtn()
+    {
+        GameObject.Find("Canvas").transform.Find("Option Window").gameObject.SetActive(true);
+    }
+    public void OnClickYesBtn()
+    {
+        GameManager.GetInstance().setCnt(0);
+        GameManager.GetInstance().setCntFlag(0);
+        SceneManager.LoadScene("StageSelect");
+    }
+    public void OnClickNoBtn()
+    {
+        GameObject.Find("Option Window").gameObject.SetActive(false);
+    }
 }
