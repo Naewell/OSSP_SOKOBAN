@@ -84,7 +84,6 @@ public class GameManager : MonoBehaviour
         {
             isGameClear = true;
             DataManager.GetInstance().setIsClear(getStageNum());   //n+1);
-            int tmpstep = GameObject.Find("player").GetComponent<PlayerController>().getStepCount();
             DataManager.GetInstance()._save();
             Debug.Log("게임종료");
         }
@@ -92,7 +91,6 @@ public class GameManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex == 1 && isGameClear)
         {   
-            int step = GameObject.Find("player").GetComponent<PlayerController>().getStepCount();
             GameObject.Find("Canvas").transform.Find("Clear Window").gameObject.SetActive(true);
         }
         else if (SceneManager.GetActiveScene().buildIndex == 1 && isGameClear == false)

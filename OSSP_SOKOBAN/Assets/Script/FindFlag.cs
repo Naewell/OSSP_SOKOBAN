@@ -5,13 +5,8 @@ using UnityEngine;
 public class FindFlag : MonoBehaviour
 {
     public GameObject[] countFlag;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    // 시작할 때 Flag 개수 카운트
     void Update()
     {
         countFlag = GameObject.FindGameObjectsWithTag("Flag");

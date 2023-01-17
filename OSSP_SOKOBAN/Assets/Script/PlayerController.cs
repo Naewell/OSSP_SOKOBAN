@@ -16,18 +16,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 objTargetPosition;
 
     private float timer = 0;
-    private int StepCount = 0;
 
     private GameObject firstObj;
     
-
-
-    void start()
-    {
-
-    }
-
-
     void Update()
     {
         if (isMoving == false) 
@@ -161,8 +152,6 @@ public class PlayerController : MonoBehaviour
      private void aloneMoving()
     {
         gameObject.transform.position = Vector3.SmoothDamp(gameObject.transform.position, targetPosition, ref velo, 0.1f);
-        //gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, targetPosition, 0.07f);
-
         aloneWaitTime();
     }
 
@@ -194,20 +183,5 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.position = targetPosition;
             firstObj.transform.position = objTargetPosition;
         }
-    }
-
-    public void setStepCount(int count)
-    {
-        this.StepCount = count;
-    }
-
-    public int getStepCount()
-    {
-        return StepCount;
-    }
-
-    public void plusStepCount()
-    {
-        this.StepCount++;
     }
 }

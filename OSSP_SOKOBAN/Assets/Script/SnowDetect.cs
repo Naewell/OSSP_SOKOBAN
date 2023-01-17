@@ -19,6 +19,7 @@ public class SnowDetect : MonoBehaviour
     }
 
     // Update is called once per frame
+    // DetectObject 스크립트와 유사
     void Update()
     {
         Vector3 rayOrigin = this.gameObject.transform.position;

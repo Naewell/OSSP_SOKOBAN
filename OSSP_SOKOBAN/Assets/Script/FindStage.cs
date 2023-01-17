@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class FindStage : MonoBehaviour
 {
-    // Start is called before the first frame update
     private GameObject[] stage;
     // Start is called before the first frame update
+
+    // 스테이지에 현제 스케이지 저장
     void Start()
     {
         stage = new GameObject[transform.childCount];
@@ -17,11 +18,5 @@ public class FindStage : MonoBehaviour
        }
 
        GameManager.GetInstance().AddStage(stage);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

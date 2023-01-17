@@ -6,18 +6,7 @@ public class Flags : MonoBehaviour
 {
     public Material[] mat = new Material[2];
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // 다른 오브젝트와 충돌 감지해서 플레이어면 안보이게 스노우면 지정해둔 색깔로 변경 및 카운트 하나 증가
      private void OnTriggerEnter(Collider other)
     {
         if (other.transform.gameObject.CompareTag("Player"))
@@ -33,6 +22,7 @@ public class Flags : MonoBehaviour
         
     }
 
+    // 다른 오브젝트와 충돌 감지해서 나갔으면 플레이어면 보이게하고 스노우면 지정해둔 색깔로 변경 및 카운트 하나 감소
     private void OnTriggerExit(Collider other)
     {
         if (other.transform.gameObject.CompareTag("Player"))

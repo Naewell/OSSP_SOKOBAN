@@ -4,45 +4,46 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Numerics;
-//using Unity.VisualScripting;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
 public class DetectObject : MonoBehaviour
 {
+    // LayerMask 이용
     public LayerMask wall;
+
+    // Ray 변수
     private float rayDistance = 5f;
     public bool cangoW, cangoA, cangoS, cangoD;
     RaycastHit hitW, hitA, hitS, hitD;
     bool ishitW, ishitA, ishitS, ishitD;
     public GameObject objW, objA, objS, objD;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
     // Update is called once per frame
     void Update()
     {
+        // 레이의 원점
         Vector3 rayOrigin = this.gameObject.transform.position + new Vector3(0, 0, 0);
 
+        // 레이의 각 방향 저장
         Vector3 rayDirw = Vector3.forward;
         Vector3 rayDira = Vector3.left;
         Vector3 rayDirs = Vector3.back;
         Vector3 rayDird = Vector3.right;
 
+        // 레이 발사
         Ray rayw = new Ray(rayOrigin, rayDirw);
         Ray raya = new Ray(rayOrigin, rayDira);
         Ray rays = new Ray(rayOrigin, rayDirs);
         Ray rayd = new Ray(rayOrigin, rayDird);
 
+        // 식별할 수 있게 각 광선마다 색깔 지정
         Debug.DrawRay(rayw.origin, rayw.direction * rayDistance, Color.green);
         Debug.DrawRay(raya.origin, raya.direction * rayDistance, Color.red);
         Debug.DrawRay(rays.origin, rays.direction * rayDistance, Color.yellow);
         Debug.DrawRay(rayd.origin, rayd.direction * rayDistance, Color.blue);
 
+        // 각 광선 방향에 닿은 오브젝트를 감지해서 변수에 저장
         ishitW = Physics.Raycast(rayw, out hitW, rayDistance);
         ishitA = Physics.Raycast(raya, out hitA, rayDistance);
         ishitS = Physics.Raycast(rays, out hitS, rayDistance);
@@ -64,6 +65,7 @@ public class DetectObject : MonoBehaviour
             objW = null;
         }
 
+        // 각 방향 갈 수 있는지 체크
         if(ishitA == false || (ishitA == true && hitA.transform.gameObject.CompareTag("Flag"))) {
             cangoA = true;   
             objA = null;
