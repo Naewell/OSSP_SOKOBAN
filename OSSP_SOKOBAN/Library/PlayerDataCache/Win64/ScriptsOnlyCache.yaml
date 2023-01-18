@@ -65,8 +65,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -146,6 +144,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -178,6 +178,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3794}
     - Class: 114
       Script: {instanceID: 4366}
+    - Class: 114
+      Script: {instanceID: 4470}
     - Class: 114
       Script: {instanceID: 4522}
     - Class: 115
@@ -735,4 +737,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StageSelect.unity
   - Assets/Scenes/Levels.unity
-  playerPath: "C:/Users/User/OneDrive/\uBC14\uD0D5 \uD654\uBA74/OSSP_SOKOBAN.exe"
+  playerPath: "C:/Users/User/OneDrive/\uBC14\uD0D5 \uD654\uBA74/12345/OSSP_SOKOBAN.exe"

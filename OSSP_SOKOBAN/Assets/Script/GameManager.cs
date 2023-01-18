@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private GameObject[] Stages;
     private GameObject sceneChange;
     private int n, nowStage;
+    private GameObject[] buttons = new GameObject[15];
     
     
     public static GameManager GetInstance()
@@ -41,6 +42,11 @@ public class GameManager : MonoBehaviour
         Stages = stage;
     }
    public GameObject[] getStage() { return Stages; }
+    public void setButtons() {
+        for(int i=0; i<15; i++) {
+            buttons[i] = GameObject.Find((i+1).ToString());
+        }
+    }
    void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -76,6 +82,18 @@ public class GameManager : MonoBehaviour
             setCnt(0);
             Stages[n].SetActive(true);
             GameObject.Find("Main Camera").transform.position = GameObject.Find("CamPos").transform.position;
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+            setButtons();
+            
+            for(int i=0; i<buttons.Length; i++) {
+                buttons[i].GetComponent<Button>().enabled = DataManager.GetInstance().getIsClear(i);
+                if(DataManager.GetInstance().getIsClear(i))
+                {   
+                    buttons[i].GetComponent<Image>().color = Color.grey;
+                }
+            }
         }
     }
     void LateUpdate()

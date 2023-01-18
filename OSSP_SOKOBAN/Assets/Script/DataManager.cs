@@ -57,6 +57,9 @@ public class DataManager : MonoBehaviour
     public void setIsClear(int stagenum) {
         gamedata.checkTrue[stagenum] = true;
     }
+    public bool getIsClear(int stagenum) {
+        return gamedata.checkTrue[stagenum];
+    }
     
     // Start is called before the first frame update
     void Awake()
